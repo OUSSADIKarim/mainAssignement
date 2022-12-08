@@ -94,7 +94,6 @@ const checkWinner = () => {
       `Almost!\nThe result is null with score:\nYou: ${playerWin} | Computer: ${compWin}`
     );
   }
-  restart();
 };
 
 const welcome = () => {
@@ -135,6 +134,7 @@ const game = () => {
     playRound(round);
   }
   checkWinner();
+  restart();
 };
 
 game();
